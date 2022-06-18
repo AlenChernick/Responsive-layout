@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Blogin.</title>
+  </head>
+  <body>
+    <div class="main-screen" onclick="onToggleMenu()"></div>
+    <header class="main-header">
+      <div class="main-layout flex align-center space-between">
+        <div class="main-logo">Blogin<span class="main-logo-point">.</span></div>
+        <ul class="main-nav flex clean-list">
+          <li><a href="#">Journal</a></li>
+          <div class="dropdown-menu">
+            <div class="dropdown-menu-content">
+              <a href="#">October 2016</a>
+              <a href="#">January 2017</a>
+              <a href="#">April 2017</a>
+            </div>
+          </div>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button onclick="onToggleMenu()" class="menu-toggle"><span class="menu-icon">☰</span></button>
+      </div>
+    </header>
+
+    <main class="main-content main-layout main-card-layout">
+      <div class="card flex">
+        <img src="img/001.jpg" alt="" class="card-image" />
+        <div class="card-info">
+          <h2 class="card-title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+          <p class="card-paragrah">
+            Ut enim ad minim veniam, quis nostrud exercitation<br />
+            ullamco laboris nisi ut aliquip ex ea commo doconsequat,<br />
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <br />
+            <br />
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+          </p>
+          <button class="card-btn" onclick="onToggleReadMore()">
+            Continue Reading<span class="btn-arrow">&#8594;</span>
+          </button>
+        </div>
+      </div>
+      <div class="card flex">
+        <img src="img/002.jpg" alt="" class="card-image" />
+        <div class="card-info">
+          <h2 class="card-title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+          <p class="card-paragrah">
+            Ut enim ad minim veniam, quis nostrud exercitation<br />
+            ullamco laboris nisi ut aliquip ex ea commo doconsequat,<br />
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <br />
+            <br />
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+          </p>
+          <button class="card-btn" onclick="onToggleReadMore()">
+            Continue Reading <span class="btn-arrow">&#8594;</span>
+          </button>
+        </div>
+      </div>
+      <div class="card flex">
+        <img src="img/003.jpg" alt="" class="card-image" />
+        <div class="card-info">
+          <h2 class="card-title">DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+          <p class="card-paragrah">
+            Ut enim ad minim veniam, quis nostrud exercitation<br />
+            ullamco laboris nisi ut aliquip ex ea commo doconsequat,<br />
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <br />
+            <br />
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+          </p>
+          <button class="card-btn" onclick="onToggleReadMore()">
+            Continue Reading <span class="btn-arrow">&#8594;</span>
+          </button>
+        </div>
+      </div>
+      <div class="modal-read-more">
+        <h2 class="modal-title flex">Join us to get access to the latest stories!</h2>
+        <input type="email" class="modal-email-input" placeholder="Enter Your Email" />
+        <button class="modal-btn modal-close-btn flex" onclick="onToggleReadMore()">Close</button>
+        <button class="modal-btn modal-submit-btn flex" onclick="onToggleReadMore()">Submit</button>
+      </div>
+      <section class="previous-next-container space-between flex">
+        <a href="#" class="previous">&#8592; Previous</a>
+        <a href="#" class="next">Next &#8594;</a>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <small class="main-footer-logo">Blogin<span class="footer-logo-point">.</span></small>
+      <div class="main-footer-copyrights">
+        © 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com
+      </div>
+      <div class="icons-container flex content-center space-between">
+        <div class="icon facebook-icon"><i class="fa-brands fa-facebook-square"></i></div>
+        <div class="icon twitter-icon"><i class="fa-brands fa-twitter-square"></i></div>
+        <div class="icon behance-icon"><i class="fa-brands fa-behance-square"></i></div>
+        <div class="icon dribble-icon"><i class="fa-brands fa-dribbble-square"></i></div>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/f7bbd11b0d.js" crossorigin="anonymous"></script>
+    <script src="js/controller.js"></script>
+  </body>
+</html>

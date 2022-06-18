@@ -1,0 +1,52 @@
+.main-footer {
+  min-width: 100%;
+  background-color: var(--clr9);
+  padding: 3.875rem 0;
+  text-align: center;
+  margin-top: 0.1rem;
+}
+
+.main-footer-logo {
+  font-family: eurofurence, monospace;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  color: var(--clr1);
+  padding-bottom: 1.60625rem;
+  cursor: default;
+}
+
+.footer-logo-point {
+  color: var(--clr2);
+}
+
+.main-footer-copyrights {
+  padding-top: 1.60625rem;
+  padding-bottom: 2.13125rem;
+  font-size: 0.8125rem;
+  color: var(--clr10);
+  cursor: default;
+}
+
+.icons-container .icon {
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  color: var(--clr16);
+}
+
+.icons-container .facebook-icon:hover {
+  color: var(--clr11);
+}
+.icons-container .twitter-icon:hover {
+  color: var(--clr13);
+}
+.icons-container .behance-icon:hover {
+  color: var(--clr14);
+}
+.icons-container .dribble-icon:hover {
+  color: var(--clr15);
+}
+
+.icons-container > *:not(:last-child) {
+  margin-inline-end: 1.25rem;
+}

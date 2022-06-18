@@ -1,0 +1,70 @@
+.main-header {
+  min-height: 110px;
+  min-width: 100%;
+  background-color: var(--clr1);
+}
+
+.main-header .main-logo {
+  font-family: eurofurence, monospace;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  color: var(--clr3);
+  cursor: default;
+}
+
+.main-header .main-logo-point {
+  color: var(--clr2);
+}
+
+.main-header .main-nav {
+  padding-block-start: 2rem;
+  padding-block-end: 2.27rem;
+}
+
+.main-header .main-nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  border: 1px solid var(--clr12);
+  padding: 3em 2.3em 2.6em 2.35em;
+  transition: color 0.5s, border-bottom-color 0.5s, border-bottom 0.1s;
+}
+
+.main-header .main-nav a:hover {
+  color: var(--clr2);
+  border-bottom: 5px solid var(--clr2);
+}
+
+.menu-toggle {
+  position: absolute;
+  right: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  opacity: 1;
+  transition: opacity 0.1s;
+}
+
+.menu-toggle:hover {
+  background-color: var(--clr4);
+}
+
+.dropdown-menu-content {
+  display: none;
+  position: absolute;
+  top: 6.8rem;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.main-nav .dropdown-menu-content a {
+  padding: 0.9rem;
+  color: black;
+  text-decoration: none;
+}
+
+.main-nav .dropdown-menu-content:hover a {
+  padding-bottom: 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-menu-content {
+  display: block;
+}

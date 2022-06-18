@@ -1,0 +1,58 @@
+.card {
+  margin-bottom: 1rem;
+  padding-bottom: 4.40625rem;
+}
+
+.card:first-child {
+  padding-top: 4.40625rem;
+}
+
+.card .card-image {
+  padding-inline-end: 2.5625rem;
+}
+
+.card .card-title {
+  color: var(--clr4);
+  padding-bottom: 2.1004rem;
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+
+.card .card-paragrah {
+  font-family: lato-regular, sans-serif;
+  font-size: 1rem;
+  color: var(--clr5);
+  padding-bottom: 1.8404rem;
+}
+
+.card .card-btn {
+  margin-block-start: 1.8rem;
+  position: relative;
+  width: 11.625rem;
+  font-size: 1rem;
+  border-radius: 20rem;
+  padding: 0.4rem;
+  color: var(--clr6);
+  border: 1px solid var(--clr6);
+  background-color: var(--clr3);
+  cursor: pointer;
+  transition: color 0.5s;
+  transition: border 0.5s;
+}
+
+.card-btn:hover {
+  color: var(--clr2);
+  border: 1px solid var(--clr2);
+}
+
+.card-btn .btn-arrow {
+  position: absolute;
+  left: 10.5rem;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.card-btn:hover .btn-arrow {
+  opacity: 1;
+  left: 10rem;
+}

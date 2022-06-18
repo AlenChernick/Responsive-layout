@@ -1,0 +1,73 @@
+.modal-read-more {
+  position: fixed;
+  top: 35%;
+  min-height: 15rem;
+  background-color: var(--clr3);
+  box-shadow: 0px 0px 2px rgb(0 0 0 / 57%);
+  text-align: center;
+  z-index: 20;
+  transform: translateX(300%);
+  transition: transform 0.3s;
+  pointer-events: auto;
+  line-height: 3rem;
+  padding: 0 1rem;
+}
+
+.modal-read-more .modal-title {
+  color: var(--clr5);
+  font-size: 2rem;
+  padding: 2.5rem 2rem 0 2rem;
+}
+
+.modal-email-input {
+  padding: 0.5rem 0 0.5rem 0.8rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.modal-btn {
+  position: absolute;
+  width: 20%;
+  justify-content: center;
+}
+
+.modal-close-btn {
+  margin-top: 0.8rem;
+  right: 26%;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 0 0.5rem 0;
+  background-color: var(--clr10);
+  color: var(--clr3);
+  border: none;
+  box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 57%);
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.modal-submit-btn {
+  margin-top: 0.8rem;
+  left: 26%;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 0 0.5rem 0;
+  background-color: var(--clr10);
+  color: var(--clr3);
+  border: none;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.574);
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.modal-close-btn:hover,
+.modal-submit-btn:hover {
+  background-color: var(--clr8);
+}
+
+body.read-more-open {
+  pointer-events: none;
+}
+
+body.read-more-open .modal-read-more {
+  transform: translateX(0);
+}

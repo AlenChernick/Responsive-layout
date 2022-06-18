@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: lato-bold, sans-serif;
+  color: var(--clr1);
+}
+
+body {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5em;
+  font-weight: 500;
+  font-size: 1.75;
+  cursor: default;
+}
+
+p {
+  margin: 0 0 1em;
+  cursor: default;
+}
+
+a {
+  color: var(--clr3);
+}
+
+img {
+  /* this is for responsive images */
+  width: 100%;
+}
